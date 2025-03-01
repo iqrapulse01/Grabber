@@ -1,5 +1,8 @@
 import React from "react";
 import "../styles/Home.css";
+import blackCouple from "../assets/images/black-couple.jpg"; 
+import cheerful from "../assets/images/cheerful-couple.jpg";
+import youngMan from "../assets/images/young-man.jpg";
 
 const Home = () => {
   return (
@@ -19,17 +22,17 @@ const Home = () => {
         <h2>Featured Deals</h2>
         <div className="deals-grid">
           <div className="deal-card">
-            <img src="/deal1.jpg" alt="Deal 1" />
+            <img src={blackCouple} alt="Deal 1" />
             <h3>50% Off Pizza</h3>
             <p>Get half off on your favorite pizza!</p>
           </div>
           <div className="deal-card">
-            <img src="/deal2.jpg" alt="Deal 2" />
+            <img src={cheerful} alt="Deal 2" />
             <h3>Free Coffee</h3>
             <p>Buy one, get one free on all coffees.</p>
           </div>
           <div className="deal-card">
-            <img src="/deal3.jpg" alt="Deal 3" />
+            <img src={youngMan} alt="Deal 3" />
             <h3>Happy Hour</h3>
             <p>Enjoy discounted drinks from 5-7 PM.</p>
           </div>
