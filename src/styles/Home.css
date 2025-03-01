@@ -1,0 +1,102 @@
+/* Home Page Styles */
+.home {
+    font-family: "Poppins", sans-serif;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the page takes at least the full viewport height */
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/hero-bg.jpg") no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    flex: 1; /* Allow hero section to grow and take available space */
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    background-color: #148446;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #044f70;
+  }
+  
+  /* Featured Deals */
+  .featured-deals {
+    padding: 2rem;
+    text-align: center;
+    flex: 1; /* Allow featured deals section to grow and take available space */
+  }
+  
+  .featured-deals h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .deals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .deal-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .deal-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .deal-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .deal-card h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  
+  .deal-card p {
+    font-size: 1rem;
+    padding: 0 1rem 1rem;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #044f70;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto; /* Push footer to the bottom */
+  }
