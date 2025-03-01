@@ -1,12 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom"; // Add useNavigate
 import "../styles/Navbar.css";
-import logo from "../assets/images/dealgrabber1bg.png"; // Import the image
+import logo from "../assets/images/dealgrabber1bg.png"; 
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -100,6 +102,13 @@ const Navbar = () => {
           </ul>
         </li>
       </ul>
+
+      {/* Right Side: Signup Button */}
+      <div className="navbar-right">
+        <button className="signup-button" onClick={() => navigate("/signup")}>
+          Sign Up
+        </button>
+      </div>
 
       {/* Hamburger Menu for Small Screens */}
       <div className="hamburger" onClick={toggleMenu}>

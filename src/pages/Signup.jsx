@@ -78,7 +78,7 @@ const Signup = () => {
         <div className="auth-social-login">
           <p>Or sign up with:</p>
           <button className="social-button google" onClick={handleGoogleSignup}>
-            <FcGoogle /> Google
+            <FcGoogle /> oogle
           </button>
         </div>
       </div>
